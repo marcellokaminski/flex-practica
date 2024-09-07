@@ -180,11 +180,70 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 
 }
 
 .hero-card-info h3{
-    background-color: red;
     font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
+.hero-card-info span{
+    background-color: var(--primary);
+     border-radius: 10px;
+     width:50px;
+     padding: 3px 0;
+     text-align: center;
+}
+
+.hero-card-bottom{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.hero-card-creator{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-card-creator span{
+    height: 40px;
+    width: 40px;
+}
+
+.creator-info span , .hero-card-price p{
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--text-gray);
+}
+
+.creator-info img{
+    height: 40px;
+    width: 40px;
+
+
+
+}
+
+.creator-info P{
+    font-size: 14px;
+    
+}
+
+.hero-card-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.hero-card-price span{
+    font-weight: 800;
+
+}
